@@ -6,15 +6,13 @@ from sklearn.linear_model import LinearRegression
 import streamlit as st
 st.title("阻尼振盪分析")  # 應用程式標題
 uploaded_file = st.file_uploader("上傳您的 CSV 檔案", type=["csv"]) # 上傳檔案
-# 輸入 CSV 下載鏈接
-st.text("或者讀取線上csv數據")
-sheet_url = st.text_input("請輸入 CSV 下載鏈接:", )
-if uploaded_file or sheet_url:
+
+if uploaded_file :
 # 讀取資料
     try:
         data = pd.read_csv(uploaded_file)
     except:
-        data = pd.read_csv(sheet_url)
+        
     st.write("### 上傳的資料")  # 顯示上傳的資料標題
     st.dataframe(data)  # 顯示資料表
 
