@@ -1,6 +1,6 @@
-streamlit
-sklearn.linear_model
-scipy.signal
-matplotlib.pyplot
-numpy
-pandas
+streamlit>=1.10,<2.0
+scikit-learn>=1.0,<2.0
+scipy>=1.5,<2.0
+matplotlib>=3.4,<4.0
+numpy>=1.21,<2.0
+pandas>=1.3,<2.0
