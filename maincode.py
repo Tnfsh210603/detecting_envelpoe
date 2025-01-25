@@ -7,14 +7,9 @@ import streamlit as st
 st.title("阻尼振盪分析")  # 應用程式標題
 uploaded_file = st.file_uploader("上傳您的 CSV 檔案", type=["csv"]) # 上傳檔案
 
-if uploaded_file :
-# 讀取資料
-    try:
-        data = pd.read_csv(uploaded_file)
-    except:
-        
-    st.write("### 上傳的資料")  # 顯示上傳的資料標題
-    st.dataframe(data)  # 顯示資料表
+
+st.write("### 上傳的資料")  # 顯示上傳的資料標題
+st.dataframe(data)  # 顯示資料表
 
 # 提取欄位
     time = data['time']  # 時間欄位
