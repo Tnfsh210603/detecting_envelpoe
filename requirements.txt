@@ -1,0 +1,6 @@
+streamlit
+sklearn.linear_model
+scipy.signal
+matplotlib.pyplot
+numpy
+pandas
